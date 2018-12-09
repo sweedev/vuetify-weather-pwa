@@ -1,18 +1,19 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <cmp-myPlace></cmp-myPlace>
+    <cmp-favoritePlaces></cmp-favoritePlaces>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import MyPlace from '../components/MyPlace'
+import FavoritePlaces from '../components/FavoritePlaces'
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    'cmp-myPlace': MyPlace,
+    'cmp-favoritePlaces': FavoritePlaces
   }
 }
 </script>
